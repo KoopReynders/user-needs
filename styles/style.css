@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("/assets/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
+  /* font-weight: 100 1000; */
+}
+body{
+  --white: #fff;
+  --offwhite: #ECECEC;
+  --green: #66e5bf;
+  --blue: #050542;
+  --yellow: #FFFC86;
+  --purple: #A675F5;
+
+
+  background-color: var(--blue);
+  margin: 2em 1em; /* margin: 2em; */
+  @media (min-width: 30em) {
+      margin: 3em 2em;
+  }
+
+  font-family: "OpenSans",Times;
+  /* font-size: 1.2em; */
+
+}
+
+a{
+  color: var(--white);
+  &:hover{
+    background-color: var(--white);
+    color: var(--blue);
+  }
+  &:focus{
+    background-color: var(--yellow);
+    color: var(--blue);
+  }
+}
+  
+
+h1,h2,h3{
+  margin: 1rem 0;
+  font-size: 3rem;
+  font-size: 30vw;
+  /* font-weight: 600; */
+  letter-spacing: -1vw;
+  line-height: .8;
+}
+  
+h1{
+  color: var(--green);
+  font-variation-settings: 'wght' 1000, 'wdth' 100; 
+  animation: grow 4s linear alternate infinite;    
+}
+@keyframes grow {
+  0% {
+    font-variation-settings: 'wght' 1000, 'wdth' 100;
+  }
+  100% {
+    font-variation-settings: 'wght' 300, 'wdth' 75;
+  }
+}
+
+h2{
+  color: var(--purple);
+  font-variation-settings: 'wght' 1000, 'wdth' 100; 
+}
+
+h3{
+  /* color: var(--blue); */
+  font-variation-settings: 'wght' 1000, 'wdth' 100;
+  -webkit-text-stroke: 1vw var(--yellow);
+  /* paint-order: stroke fill; */
+  color: var(--blue);    
+  animation: fill 4s infinite alternate;
+}
+@keyframes fill {
+  0% {
+    -webkit-text-stroke: var(--green);
+  }
+  50%{
+    -webkit-text-stroke: var(--yellow);
+  }
+  100% {
+    -webkit-text-stroke: var(--purple);
+  }
+}
+
+  /*
+
+  main{
+    pointer-events: auto;
+  }  
+
+  header{
+    position: sticky;
+    z-index: -1;
+    top: 1rem;
+    width: 99vw;
+    background: pink;
+    overflow-y: hidden;
+  }
+
+
+  header p{
+    max-width: 35em;
+  }
+
+  article{
+    position: relative;
+    max-width: 35em;
+    margin: 3rem 0 6rem 0;
+
+    padding: 1rem;
+    border-radius: .5rem;
+    color: #050542;
+    background-color: #66e5bf;
+    pointer-events: inherit;
+    
+  }
+  h2{
+    color: #050542;
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  li{
+    margin-bottom: 0.2rem;
+  }
+  article a{
+    color: #050542;  
+  }
+  article a:hover{
+    background-color:#050542;
+    color: #fff;
+  }
+    */
