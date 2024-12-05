@@ -1,6 +1,6 @@
 @font-face {
   font-family: "OpenSans";
-  src: url("/assets/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
+  src: url("OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
   /* font-weight: 100 1000; */
 }
 body{
@@ -14,13 +14,12 @@ body{
 
   background-color: var(--blue);
   margin: 2em 1em; /* margin: 2em; */
-  @media (min-width: 30em) {
-      margin: 3em 2em;
+  @media (min-width: 35em) {
+      margin: 4em;
   }
 
   font-family: "OpenSans",Times;
   /* font-size: 1.2em; */
-
 }
 
 a{
